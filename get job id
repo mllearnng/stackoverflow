@@ -1,0 +1,21 @@
+from pyspark.sql.types import IntegerType
+from pyspark.sql.types import *
+from pyspark.sql import Row
+import base64
+import requests
+import json
+
+databricks_instance ="https://databricksinstance"
+
+url_list = f"{databricks_instance}/api/2.1/jobs/list"
+
+headers = {
+  'Authorization': 'Bearer token',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("GET", url_list, headers=headers).json()
+print(response)
+print(response['job_id'])
+print(response['start_time'])
+print(response['end_time'])
