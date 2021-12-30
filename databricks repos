@@ -1,0 +1,18 @@
+import requests
+my_pat = "generated personal access token"
+workspace_url = "https://name-of-workspace"
+def list_files(base_path: str):
+  lst = requests.request(method='get', 
+    url=f"{workspace_url}/api/2.0/workspace/list", 
+    headers={"Authentication": f"Bearer {my_pat}",
+    json={"path": base_path}).json()["objects"]
+  results = []
+  for i in lst:
+    if i["object_type"] == "DIRECTORY" or i["object_type"] == "REPO":
+      results.extend(list_files(i["path"]))
+    else:
+      results.append(i["path"])
+  
+  return results
+  
+all_files = list_files("/Repos/<my-initial-folder")
