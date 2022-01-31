@@ -1,0 +1,66 @@
+➜  bin pip install --user databricks-cli
+
+zsh: command not found: pip
+➜  bin pip3 install --user databricks-cli
+Requirement already satisfied: databricks-cli in /Users/r183532/Library/Python/3.8/lib/python/site-packages (0.16.2)
+Requirement already satisfied: six>=1.10.0 in /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/site-packages (from databricks-cli) (1.15.0)
+Requirement already satisfied: tabulate>=0.7.7 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (0.8.9)
+Requirement already satisfied: requests>=2.17.3 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (2.27.1)
+Requirement already satisfied: click>=6.7 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (8.0.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (2.0.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (1.26.7)
+Requirement already satisfied: idna<4,>=2.5 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (2021.10.8)
+WARNING: You are using pip version 21.3.1; however, version 22.0.2 is available.
+You should consider upgrading via the '/Library/Developer/CommandLineTools/usr/bin/python3 -m pip install --upgrade pip' command.
+➜  bin databricks --version
+zsh: command not found: databricks
+➜  bin
+➜  bin
+➜  bin clear
+export PATH=$PATH:$HOME/Library/Python/3.8/bin
+➜  bin cd ~/.local/bin
+cd: no such file or directory: /Users/r183532/.local/bin
+➜  bin pip3 install databricks-cli
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: databricks-cli in /Users/r183532/Library/Python/3.8/lib/python/site-packages (0.16.2)
+Requirement already satisfied: requests>=2.17.3 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (2.27.1)
+Requirement already satisfied: tabulate>=0.7.7 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (0.8.9)
+Requirement already satisfied: six>=1.10.0 in /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/site-packages (from databricks-cli) (1.15.0)
+Requirement already satisfied: click>=6.7 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (8.0.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (1.26.7)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (2.0.10)
+Requirement already satisfied: idna<4,>=2.5 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (3.3)
+WARNING: You are using pip version 21.3.1; however, version 22.0.2 is available.
+You should consider upgrading via the '/Library/Developer/CommandLineTools/usr/bin/python3 -m pip install --upgrade pip' command.
+➜  bin cd /Users/r183532/Library/Python/3.8
+➜  3.8 ls
+bin lib
+➜  3.8 cd bin
+➜  bin ls
+databricks dbfs       nltk       normalizer pip        pip3       pip3.8     tabulate   tqdm
+➜  bin echo $HOME
+/Users/r183532
+➜  bin cd $HOME/Library/Python/3.8/bin
+➜  bin ls
+databricks dbfs       nltk       normalizer pip        pip3       pip3.8     tabulate   tqdm
+➜  bin
+➜  bin
+➜  bin vi ~/.bashrc
+➜  bin source ~/.bashrc
+➜  bin pip install --user databricks-cli
+Requirement already satisfied: databricks-cli in /Users/r183532/Library/Python/3.8/lib/python/site-packages (0.16.2)
+Requirement already satisfied: requests>=2.17.3 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (2.27.1)
+Requirement already satisfied: click>=6.7 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (8.0.3)
+Requirement already satisfied: six>=1.10.0 in /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/site-packages (from databricks-cli) (1.15.0)
+Requirement already satisfied: tabulate>=0.7.7 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from databricks-cli) (0.8.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (2.0.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (1.26.7)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/r183532/Library/Python/3.8/lib/python/site-packages (from requests>=2.17.3->databricks-cli) (3.3)
+WARNING: You are using pip version 21.3.1; however, version 22.0.2 is available.
+You should consider upgrading via the '/Library/Developer/CommandLineTools/usr/bin/python3 -m pip install --upgrade pip' command.
+➜  bin databricks --version
+Version 0.16.2
+➜  bin
